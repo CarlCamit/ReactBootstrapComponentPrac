@@ -47,7 +47,7 @@ const FormLabel = ({ check = false, labelName, children }) => {
 
     if (labelType === "form-group") {
         return (
-            <label for={ labelName }>
+            <label htmlFor={ labelName }>
                 { children }
             </label>
         )

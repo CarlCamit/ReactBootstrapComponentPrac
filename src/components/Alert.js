@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Alert = ({ children, status = 'none', role = 'alert' }) => {
+const Alert = ({ children, status = 'none' }) => {
     let className = 'alert'
 
     if (status === 'primary') {
@@ -31,7 +31,7 @@ const Alert = ({ children, status = 'none', role = 'alert' }) => {
     }
 
     return (
-        <div className={ className } role={ role } >
+        <div className={ className } role='alert' >
             { children }
         </div>
     )
