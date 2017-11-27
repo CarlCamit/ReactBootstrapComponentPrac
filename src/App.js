@@ -5,6 +5,7 @@ import './bootstrap-4.0.0-beta.2-dist/css/bootstrap.css'
 import Button from './components/Button'
 import { Nav, NavItem } from './components/Nav'
 import Alert from './components/Alert'
+import { Card, CardImg, CardBody, CardTitle, CardText } from './components/Card'
 
 class App extends Component {
   render() {
@@ -47,6 +48,15 @@ class App extends Component {
           <Alert status='light'>
             This is a light alert
           </Alert>
+        </div>
+        <div id="cardtest">
+          <Card>
+            <CardImg src="https://a.wattpad.com/useravatar/Finnluvsfionna.128.218756.jpg" alt="Finn The Human" />
+            <CardBody>
+              <CardTitle level='4'>Finn The Human</CardTitle>
+              <CardText>The last remaining human on Ooo</CardText>
+            </CardBody>
+          </Card>
         </div>
       </div>
     );
