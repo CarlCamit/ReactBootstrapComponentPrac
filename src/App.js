@@ -4,6 +4,7 @@ import './App.css';
 import './bootstrap-4.0.0-beta.2-dist/css/bootstrap.css'
 import Button from './components/Button'
 import { Nav, NavItem } from './components/Nav'
+import Alert from './components/Alert'
 
 class App extends Component {
   render() {
@@ -20,6 +21,32 @@ class App extends Component {
             <NavItem active={ true }>Second</NavItem>
             <NavItem>Third</NavItem>
           </Nav>
+        </div>
+        <div className='mt-8'>
+          <Alert status='primary'>
+            This is a primary alert
+          </Alert>
+          <Alert status='secondary'>
+            This is a secondary alert
+          </Alert>
+          <Alert status='success'>
+            This is a success alert
+          </Alert>
+          <Alert status='danger'>
+            This is a danger alert
+          </Alert>
+          <Alert status='warning'>
+            This is a warning alert
+          </Alert>
+          <Alert status='info'>
+            This is a info alert
+          </Alert>
+          <Alert status='dark'>
+            This is a dark alert
+          </Alert>
+          <Alert status='light'>
+            This is a light alert
+          </Alert>
         </div>
       </div>
     );
