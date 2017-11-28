@@ -7,10 +7,19 @@ import { Nav, NavItem } from './components/Nav'
 import Alert from './components/Alert'
 import { Card, CardImg, CardBody, CardTitle, CardText } from './components/Card'
 import { Form, FormGroup, FormLabel, FormInput } from './components/Form'
+import Container from './components/Container'
+import Row from './components/Row'
+import Col from './components/Col'
 
 class App extends Component {
   render() {
     return (
+    <Container>
+      <Row>
+        <Col>1</Col>
+        <Col width='-8'>8</Col>
+        <Col width='-3'>3</Col>
+      </Row>
       <div className="App">
         <div className='mt-3'>
           <Button title='Google' href='https://www.google.com/' />
@@ -59,45 +68,46 @@ class App extends Component {
             </CardBody>
           </Card>
         </div>
-    <Form>
-      <FormGroup>
-        <FormLabel labelName="exampleInputEmail1">Email</FormLabel>
-        <FormInput type="email" id="exampleInputEmail1" placeholder="Enter email" aria={ true } ariaDescribeByID="emailHelp" ariaText="We'll never share your email with anyone else."></FormInput>
-      </FormGroup>
-      <FormGroup>
-        <FormLabel labelName="exampleInputPassword1">Password</FormLabel>
-        <FormInput type="password" id="exampleInputEmail1" placeholder="Password"></FormInput>
-      </FormGroup>
-      <FormGroup>
-        <FormLabel labelName="testTextField">TextField</FormLabel>
-        <FormInput type="text" id="exampleInputText1" placeholder="Enter text here"></FormInput>
-      </FormGroup>
-      <FormGroup check={ true }>
-        <FormLabel check={ true }>
-          <FormInput type="checkbox" value="" />
-          This is not disabled
-        </FormLabel>
-      </FormGroup>
-      <FormGroup check={ true } enable={ true }>
-        <FormLabel check={ true }>
-          <FormInput type="checkbox" value="" disabled />
-          This is disabled
-        </FormLabel>
-      </FormGroup>
-      <FormGroup check={ true }>
-        <FormLabel check={ true }>
-          <FormInput type="radio" name="exampleRadio" id="exampleRadios2" value="option1" />
-          This is not disabled
-        </FormLabel>
-      </FormGroup>
-      <FormGroup check={ true } enable={ true }>
-        <FormLabel check={ true }>
-          <FormInput type="radio" name="exampleRadio" id="exampleRadios2" value="option2" disabled />
-          This is disabled
-        </FormLabel>
-      </FormGroup>
-    </Form>
+        <Form>
+          <FormGroup>
+            <FormLabel labelName="exampleInputEmail1">Email</FormLabel>
+            <FormInput type="email" id="exampleInputEmail1" placeholder="Enter email" aria={ true } ariaDescribeByID="emailHelp" ariaText="We'll never share your email with anyone else."></FormInput>
+          </FormGroup>
+          <FormGroup>
+            <FormLabel labelName="exampleInputPassword1">Password</FormLabel>
+            <FormInput type="password" id="exampleInputEmail1" placeholder="Password"></FormInput>
+          </FormGroup>
+          <FormGroup>
+            <FormLabel labelName="testTextField">TextField</FormLabel>
+            <FormInput type="text" id="exampleInputText1" placeholder="Enter text here"></FormInput>
+          </FormGroup>
+          <FormGroup check={ true }>
+            <FormLabel check={ true }>
+              <FormInput type="checkbox" value="" />
+              This is not disabled
+            </FormLabel>
+          </FormGroup>
+          <FormGroup check={ true } enable={ true }>
+            <FormLabel check={ true }>
+              <FormInput type="checkbox" value="" disabled />
+              This is disabled
+            </FormLabel>
+          </FormGroup>
+          <FormGroup check={ true }>
+            <FormLabel check={ true }>
+              <FormInput type="radio" name="exampleRadio" id="exampleRadios2" value="option1" />
+              This is not disabled
+            </FormLabel>
+          </FormGroup>
+          <FormGroup check={ true } enable={ true }>
+            <FormLabel check={ true }>
+              <FormInput type="radio" name="exampleRadio" id="exampleRadios2" value="option2" disabled />
+              This is disabled
+            </FormLabel>
+          </FormGroup>
+        </Form>
       </div>
+    </Container>
     );
   }
 }
